@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+    background-color: 9999999;
+    margin: 1em;
+}
+
+@font-face{
+    font-family: moonflower; 
+    src: url(Moon_flower.ttf);
+    
+}
+
+#prøvdette, #drink, #laks, #kage, #gestus{
+    font-family: moonflower;
+    font-size: 2.5em;
+}
+
+#indhold div {
+    border:1px solid black;
+}
+
+#indhold {
+    display: grid; 
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "a a a"
+    "b b b"
+    ;
+   } 
+#header {
+    grid-area: a;
+}
+
+#foerstetekst {
+    grid-area: b;
+}
+
+
