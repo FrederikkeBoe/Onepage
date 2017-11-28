@@ -1,3 +1,4 @@
+@media (min-width: 500px) {
 body {
     font-family: sans-serif;
     background-color: 9999999;
@@ -40,9 +41,9 @@ body {
     "n n n"
     "o o o"
     "p p p"
-    "q q q";
-   } 
-   
+    "q q q"
+    "r r r";
+   }    
 #header {
     grid-area: a;
      margin-left: auto;
@@ -138,6 +139,12 @@ body {
     text-align: center;
 }
 
+#elskmig {
+    grid-area: r;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 #indhold div {
     border:1px solid black;
@@ -146,4 +153,33 @@ body {
 #indhold section {
     border:1px solid black;
     text-align: center;
+    }
+    
+@media (max-width: 800px) {
+
+#indhold {
+    display: grid; 
+    grid-gap: 5px;
+    grid-template-columns: 1fr; 
+    grid-template-areas:   
+    "a"
+    "g"
+    "b"
+    "c"
+    "d"
+    "f"
+    "e"
+    "i"
+    "j"
+    "h"
+    "l"
+    "m"
+    "k"
+    "n"
+    "o"
+    "p"
+    "q"
+    "r"
+    ;
+    }
 }
