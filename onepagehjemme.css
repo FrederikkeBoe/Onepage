@@ -43,6 +43,7 @@ body {
     "o o o"
     "p p p"
     "q q q"
+    "t t t"
     "r r r";
    }    
 #header {
@@ -145,7 +146,17 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+#navbar {
+    grid-area: s;
+    text-align: center;
+    font-family: opensans;
+    font-size: 0.5em;    
+}
 
+#toppen {
+    grid-area: t;
+    text-align: right;
+}
 
 #indhold div {
     border:1px solid black;
@@ -155,9 +166,7 @@ body {
     border:1px solid black;
     text-align: center;
     }
-#navbar {
-    grid-area: s;
-}
+
 
 }
 @media (max-width: 850px) {
@@ -168,6 +177,7 @@ body {
     grid-template-columns: 1fr; 
     grid-template-areas:   
     "a"
+    "s"
     "g"
     "b"
     "c"
@@ -184,7 +194,30 @@ body {
     "o"
     "p"
     "q"
+    "t"
     "r"
     ;
     }
+@font-face{
+    font-family: moonflower; 
+    src: url(Moon_flower.ttf);
+}
+
+#drink, #kage, #laks, #deler1, #gestus, #semed {
+    font-family: moonflower;
+    font-size: 2em;
+    text-align: center;
+}
+#gestus {
+    font-size: 1.5em;
+}
+@font-face {
+    font-family: opensans;
+    src: url(OpenSans-Regular.ttf);
+}
+
+#drinktekst, #lakstekst, #kagetekst, #foerstetekst, #gestustekst {
+    font-family: opensans; 
+    font-size: 1em;
+    text-align: center;
 }
