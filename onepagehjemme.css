@@ -1,9 +1,9 @@
-@media (min-width: 500px) {
+@media (min-width: 600px) {
 body {
     font-family: sans-serif;
     background-color: 9999999;
     margin: 1em;
-    font-size: 4em;
+    font-size: 4em; 
 }
 
 @font-face{
@@ -154,8 +154,8 @@ body {
     border:1px solid black;
     text-align: center;
     }
-    
-@media (max-width: 800px) {
+}
+@media (max-width: 850px) {
 
 #indhold {
     display: grid; 
