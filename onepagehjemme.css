@@ -1,0 +1,149 @@
+body {
+    font-family: sans-serif;
+    background-color: 9999999;
+    margin: 1em;
+    font-size: 4em;
+}
+
+@font-face{
+    font-family: moonflower; 
+    src: url(Moon_flower.ttf);
+}
+
+#deler1, #drink, #laks, #kage, #gestus, #semed{
+    font-family: moonflower;
+    font-size: 2.5em;
+}
+
+@font-face {
+    font-family: opensans;
+    src: url(OpenSans-Regular.ttf);
+}
+
+
+#indhold {
+    display: grid; 
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+  /*  grid-template-rows: 2fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr 2fr 3fr- */
+    grid-template-areas: 
+    "a a a"
+    "g g g"
+    "b b b"
+    "c c c"
+    "f f d"
+    "f f e"
+    "i j j"
+    "h j j"
+    "m m l"
+    "m m k"
+    "n n n"
+    "o o o"
+    "p p p"
+    "q q q";
+   } 
+   
+#header {
+    grid-area: a;
+     margin-left: auto;
+    margin-right: auto;
+}
+
+#foerstetekst {
+    grid-area: b;
+    text-align: center;
+    font-family: opensans;
+    font-size: 0.5em;
+}
+
+#deler1 {
+    grid-area: c;
+    text-align: center;
+}
+
+#drink {
+    grid-area: d;
+    font-size: 1em;
+    text-align: center;
+}
+
+#drinktekst {
+    grid-area: e;
+    font-family: opensans; 
+    font-size: 0.5em;
+}
+
+#drinkbillede {
+    grid-area: f;
+}
+
+#semed {
+    grid-area: g;
+    text-align: center;
+}
+
+#lakstekst {
+    grid-area: h;
+      font-family: opensans; 
+    font-size: 0.5em;
+    float: right;
+}
+
+#laks {
+    grid-area: i;
+    font-size: 1em;
+    text-align: center;
+}
+
+#laksbillede {
+    grid-area: j;
+    object-fit: cover;
+}
+
+#kagetekst {
+    grid-area: k;
+      font-family: opensans; 
+    font-size: 0.5em;
+}
+
+#kage {
+    grid-area: l;
+    font-size: 1em;
+    text-align: center;
+}
+
+#kagebillede {
+    grid-area: m;
+}
+
+#appelsiner2 {
+    grid-area: n;
+}
+
+#gestus {
+    grid-area: o;
+    text-align: center;
+    font-size: 1em;
+}
+
+#gestusbillede {
+    grid-area: p;
+    text-align: center;
+}
+
+#gestustekst {
+    grid-area: q;
+      font-family: opensans; 
+    font-size: 0.5em;
+    text-align: center;
+}
+
+
+#indhold div {
+    border:1px solid black;
+}
+
+#indhold section {
+    border:1px solid black;
+    text-align: center;
+}
