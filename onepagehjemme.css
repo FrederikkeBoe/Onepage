@@ -216,8 +216,12 @@ body {
     src: url(OpenSans-Regular.ttf);
 }
 
-#drinktekst, #lakstekst, #kagetekst, #foerstetekst, #gestustekst {
+#drinktekst, #lakstekst, #kagetekst, #foerstetekst, #gestustekst, #toppen, #navbar {
     font-family: opensans; 
     font-size: 1em;
+    text-align: center;
+}
+
+#gestusbillede, #header {
     text-align: center;
 }
