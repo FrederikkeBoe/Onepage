@@ -1,8 +1,9 @@
+@media (min-width: 600px) {
 body {
     font-family: sans-serif;
     background-color: 9999999;
     margin: 1em;
-    font-size: 4em;
+    font-size: 4em; 
 }
 
 @font-face{
@@ -25,9 +26,9 @@ body {
     display: grid; 
     grid-gap: 5px;
     grid-template-columns: 1fr 1fr 1fr;
-  /*  grid-template-rows: 2fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr 2fr 3fr- */
     grid-template-areas: 
     "a a a"
+    "s s s"
     "g g g"
     "b b b"
     "c c c"
@@ -40,9 +41,10 @@ body {
     "n n n"
     "o o o"
     "p p p"
-    "q q q";
-   } 
-   
+    "q q q"
+    "t t t"
+    "r r r";
+   }    
 #header {
     grid-area: a;
      margin-left: auto;
@@ -59,6 +61,10 @@ body {
 #deler1 {
     grid-area: c;
     text-align: center;
+    padding-bottom: 200px;
+        /*border:1px solid #ff6600;*/
+    text-align: center;
+    box-shadow: 0px 10px 10px -6px rgba(0,0,0,0.75);
 }
 
 #drink {
@@ -118,6 +124,8 @@ body {
 
 #appelsiner2 {
     grid-area: n;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #gestus {
@@ -138,12 +146,115 @@ body {
     text-align: center;
 }
 
+#elskmig {
+    grid-area: r;
+    margin-left: auto;
+    margin-right: auto;
+}
+#navbar {
+    grid-area: s;
+    text-align: center;
+    font-family: opensans;
+    font-size: 0.5em;  
+    background-color: #f2f2f2;
+}
+
+#toppen {
+    grid-area: t;
+    text-align: right;
+    font-size: 0.5em;
+    font-family: opensans;
+    background-color: #f2f2f2;
+}
+
+
+#indhold section {
+    text-align: center;
+    }
+
+#indhold section {
+    border:1px solid white;
+    text-align: center;
+    }
+
+#drink, #laks, #kage {
+    border:1px solid white;
+    text-align: center;
+}
+#drinkbillede, #drink {
+    padding-top: 50px;
+}
+
+}
+@media (max-width: 850px) {
+
+#indhold {
+    display: grid; 
+    grid-gap: 5px;
+    grid-template-columns: 1fr; 
+    grid-template-areas:   
+    "a"
+    "s"
+    "g"
+    "b"
+    "c"
+    "d"
+    "f"
+    "e"
+    "i"
+    "j"
+    "h"
+    "l"
+    "m"
+    "k"
+    "n"
+    "o"
+    "p"
+    "q"
+    "t"
+    "r"
+    ;
+    }
+@font-face{
+    font-family: moonflower; 
+    src: url(Moon_flower.ttf);
+}
+
+#drink, #kage, #laks, #deler1, #gestus, #semed {
+    font-family: moonflower;
+    font-size: 2em;
+    text-align: center;
+}
+#gestus {
+    font-size: 1.5em;
+}
+@font-face {
+    font-family: opensans;
+    src: url(OpenSans-Regular.ttf);
+}
+
+#drinktekst, #lakstekst, #kagetekst, #foerstetekst, #gestustekst, #toppen, #navbar {
+    font-family: opensans; 
+    font-size: 1em;
+    text-align: center;
+}
+
+#gestusbillede, #header {
+    text-align: center;
+    size: 100%;
+}
 
 #indhold div {
-    border:1px solid black;
+    border:1px solid white;
 }
 
 #indhold section {
-    border:1px solid black;
+    border:1px solid white;
     text-align: center;
+    }
+
+#header {
+    margin-left: auto;
+    margin-right: auto;
+
 }
